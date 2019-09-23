@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
 		line-height: 1;
 	}
 	html, body{
-		background: #f2f3f4;
+		background: #fafafa;
 	}
 	ol, ul {
 		list-style: none;
@@ -51,4 +51,8 @@ export const GlobalStyle = createGlobalStyle`
 		text-decoration: none;
 		color: #fff;
 	}
+  input {
+    outline: none;
+    border: none;
+  }
 `
