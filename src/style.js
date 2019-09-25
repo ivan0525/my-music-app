@@ -28,6 +28,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 	body {
 		line-height: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 	}
 	html, body{
 		background: #fafafa;
