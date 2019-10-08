@@ -6,4 +6,6 @@ export const ListComtainer = styled.div`
     margin: 10px 5px;
   }
 `
+export const ListItem = styled.div``
+
 export const List = styled.div``

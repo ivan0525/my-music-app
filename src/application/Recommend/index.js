@@ -1,6 +1,5 @@
 import React from 'react'
 import Slider from '../../components/slider'
-import recommendList from '../../components/list'
 import RecommendList from '../../components/list'
 function Recommend(props) {
   // mock数据
