@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config' //renderRoutes读取路由配置转化为Route标签
 import { Top, Tab } from './style'
 function Home(props) {
   const { route } = props
   return (
-    <div>
+    <Fragment>
       <Top>
         <span className='iconfont menu'>&#xe65c;</span>
         <span className='title'>WebApp</span>
@@ -23,7 +23,7 @@ function Home(props) {
         </NavLink>
       </Tab>
       {renderRoutes(route.routes)}
-    </div>
+    </Fragment>
   )
 }
 

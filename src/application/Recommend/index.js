@@ -9,7 +9,7 @@ function Recommend(props) {
         'http://p1.music.126.net/ZYLJ2oZn74yUz5x8NBGkVA==/109951164331219056.jpg'
     }
   })
-  const recommendList = [1, 2, 3, 4].map((item) => {
+  const recommendList = [1, 2, 3, 4, 6, 6].map((item) => {
     return {
       id: 1,
       picUrl:
