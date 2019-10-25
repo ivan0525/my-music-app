@@ -1,3 +1,4 @@
+// 用来导出action和reducer
 import { createStore, compose, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import reducer from './reducer'

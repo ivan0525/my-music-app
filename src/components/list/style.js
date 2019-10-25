@@ -30,7 +30,7 @@ export const ListItem = styled.div`
       text-align: left;
       font-size: ${style['font-size-s']};
       line-height: 1.4;
-      color: ${style['font-color-desc']};
+      color: ${style['font-color-light']};
     }
   }
   .desc {
