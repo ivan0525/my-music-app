@@ -6,7 +6,7 @@ const axiosInstance = axios.create({
   baseURL
 })
 
-// 相应拦截
+// 响应拦截
 axiosInstance.interceptors.response.use(
   (res) => {
     return res.data
