@@ -3,7 +3,6 @@ import { ListComtainer, List, ListItem } from './style'
 import { getCount } from '../../api/utils'
 function RecommendList(props) {
   const { recommendList } = props
-  console.log(recommendList)
   return (
     <ListComtainer>
       <h3>推荐歌单</h3>

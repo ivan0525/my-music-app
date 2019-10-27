@@ -10,7 +10,7 @@ function Slider(props) {
     if (bannerList.length && !sliderSwiper) {
       let sliderSwiper = new Swiper('.slider-container', {
         loop: true,
-        // autoplay: true,
+        autoplay: true,
         autoplayDisableOnInteraction: false,
         pagination: { el: '.swiper-pagination' }
       })
@@ -27,7 +27,7 @@ function Slider(props) {
               <div className='swiper-slide' key={index}>
                 <div className='slider-nav'>
                   <img
-                    src={slider.imgUrl}
+                    src={slider.imageUrl}
                     width='100%'
                     height='100%'
                     alt='推荐'
