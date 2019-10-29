@@ -1,14 +1,14 @@
 // 存放initialState和reducer函数
 import { fromJS } from 'immutable'
 import * as actionTypes from './actionTypes'
-
+import { IAction } from './types'
 // 初始的state
 const initialState = fromJS({
   bannerList: [],
   recommendList: []
 })
 
-export default (state = initialState, action) => {
+export default (state = initialState, action: IAction) => {
   switch (action.type) {
     case actionTypes.CHANGE_BANNER:
       return state.set('bannerList', action.data)

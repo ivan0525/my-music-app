@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { SliderContainer } from './style'
 import 'swiper/css/swiper.css'
 import Swiper from 'swiper'
+import { Props } from '../../types'
 
-function Slider(props) {
+function Slider(props: Props) {
   const [sliderSwiper, setSliderSwiper] = useState(null)
   const { bannerList } = props
   useEffect(() => {
     if (bannerList.length && !sliderSwiper) {
-      let sliderSwiper = new Swiper('.slider-container', {
+      let sliderSwiper: any = new Swiper('.slider-container', {
         loop: true,
         autoplay: true,
-        autoplayDisableOnInteraction: false,
         pagination: { el: '.swiper-pagination' }
       })
       setSliderSwiper(sliderSwiper)
@@ -22,7 +22,7 @@ function Slider(props) {
       <div className="before"></div>
       <div className="slider-container">
         <div className="swiper-wrapper">
-          {bannerList.map((slider, index) => {
+          {bannerList.map((slider: any, index: number) => {
             return (
               <div className="swiper-slide" key={index}>
                 <div className="slider-nav">

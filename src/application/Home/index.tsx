@@ -2,7 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config' // renderRoutes读取路由配置转化为Route标签
 import { Top, Tab } from './style'
-function Home(props) {
+export interface Props {
+  [key: string]: any
+}
+function Home(props: Props) {
   const { route } = props
   return (
     <>

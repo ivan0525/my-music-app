@@ -1,13 +1,14 @@
 import React from 'react'
 import { ListComtainer, List, ListItem } from './style'
 import { getCount } from '../../api/utils'
-function RecommendList(props) {
+import { Props } from '../../types'
+function RecommendList(props: Props) {
   const { recommendList } = props
   return (
     <ListComtainer>
       <h3>推荐歌单</h3>
       <List>
-        {recommendList.map((item, index) => {
+        {recommendList.map((item: any, index: number) => {
           return (
             <ListItem key={item.id + index}>
               <div className="img-wrapper">

@@ -2,6 +2,9 @@ import axios from 'axios'
 export const baseURL = 'http://39.108.188.9:3000'
 
 axios.defaults.baseURL = baseURL
+// const axiosInstance = axios.create({
+//   baseURL
+// })
 
 // 响应拦截
 axios.interceptors.response.use(

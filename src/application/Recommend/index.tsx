@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import Slider from '../../components/slider'
 import RecommendList from '../../components/list'
 import * as actionTypes from './store/actionCreators'
-function Recommend(props) {
+import { IStoreState } from './store/types'
+import { Props } from '../../types'
+function Recommend(props: Props) {
   const { bannerList, recommendList } = props
   const { getBannerDataDispatch, getRecommendListDataDispatch } = props
 
@@ -22,7 +24,7 @@ function Recommend(props) {
   )
 }
 // 映射Redux全局的state到组件的props上
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: IStoreState) => {
   // 不要再这里将数据toJS,不然每次diff比对props的时候都是不一样的引用，还是导致不必要的重渲染, 属于滥用immutable
   return {
     bannerList: state.getIn(['recommend', 'bannerList']),
@@ -30,7 +32,7 @@ const mapStateToProps = (state) => {
   }
 }
 // 映射dispatch到props上
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch: any) => {
   return {
     getBannerDataDispatch() {
       dispatch(actionTypes.getBannerList())

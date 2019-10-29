@@ -1,6 +1,9 @@
 import React from 'react'
 
-function Rank(props) {
+export interface Props {
+  [key: string]: any
+}
+function Rank(props: Props) {
   return <div>Rank</div>
 }
 
